@@ -1,0 +1,9 @@
+
+<div class="container">
+  <app-add-product (addcar)="onAddDataToChild($event)"></app-add-product>
+  <div class="row">
+    @for(car of cars; track car.name ) {
+      <app-products [car]="car"></app-products>
+    }
+  </div>
+  </div>
